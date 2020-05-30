@@ -1,4 +1,32 @@
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+  }
+
+/* Control the left side */
+.left {
+    left: 0;
+    background-color: #01C5CE;
+  }
+  
+  /* Control the right side */
+.right {
+    right: 0;
+    background-color: #FA999A;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
 h1 {
+    color: white;
     font-family: Didot; 
     font-size: 60px; 
     font-style: normal; 
