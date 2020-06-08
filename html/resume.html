@@ -49,6 +49,18 @@
     <main role="main" class="container">
       <div>
         <h3 class="page-header p-3">resume</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <a href="#">Link to resume</a>
+            <form method="get" action="../files/Kassie_Wang_Resume.pdf">
+              <button type="submit">Download</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+            <canvas id="the-canvas"></canvas>
+          </div>
+        </div>
       </div>
     </main>
     

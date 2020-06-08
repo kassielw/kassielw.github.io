@@ -1,7 +1,7 @@
 h1 {
     color: white;
     font-family: Didot; 
-    font-size: 5vmax; 
+    font-size: 3.75em; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 700;  
@@ -9,7 +9,7 @@ h1 {
 
 h3 { 
     font-family: Quicksand;
-    font-size: 50px;
+    font-size: 3.75em;
     font-style: normal; 
     font-variant: small-caps; 
     font-weight: 700; 
@@ -17,7 +17,7 @@ h3 {
 
 p { 
     font-family: Quicksand; 
-    font-size: 16px; 
+    font-size: 1em; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 400;  
@@ -83,7 +83,6 @@ li {
 
 .navbar-custom .dropdown-item {
     color: #ffffff;
-    text-align: right;
 }
 
 .navbar-custom .dropdown-item:hover,
@@ -100,4 +99,24 @@ body {
 
 .page-header {
     text-align: center;
+}
+
+.btn {
+    font-family: Quicksand;
+}
+ 
+.btn-primary {
+    background: #fa999a;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: white;
+    color: #fa999a;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #016d9f;
+    color: #ffffff;
+    box-shadow: none;
 }
