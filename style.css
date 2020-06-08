@@ -15,12 +15,20 @@ h3 {
     font-weight: 700; 
 }
 
+h4 { 
+    font-family: Quicksand;
+    font-size: 1.5em;
+    font-style: normal;  
+    font-weight: 900;
+
+}
+
 p { 
     font-family: Quicksand; 
     font-size: 1em; 
     font-style: normal; 
     font-variant: normal; 
-    font-weight: 400;  
+    font-weight: lighter;  
 }
 
 li {
@@ -119,4 +127,48 @@ body {
     background: #016d9f;
     color: #ffffff;
     box-shadow: none;
+}
+
+.backimg {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25)), 
+        url(files/IMG_1165.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.link {
+    color: white;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: #fa999a;
+}
+
+.card {
+    background-color: white;
+    color: black;
+}
+
+.card-footer {
+    font-family: Quicksand;
+}
+
+.card-deck {
+    padding-bottom: 3%;
+}
+
+a.fas,
+a.fab {
+    padding-right: 0.5em;
+    color: #fa999a;
+}
+
+a.fas:hover,
+a.fab:hover {
+    color: #016d9f;
+    text-decoration: none;
 }
