@@ -45,8 +45,13 @@ li {
 .bg-lightblue { 
     background: #01c5ce; 
 }
+
 .bg-salmon { 
     background: #fa999a; 
+}
+
+.bg-darkblue { 
+    background: #016d9f; 
 }
 
 .dropdown:hover .dropdown-menu {
