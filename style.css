@@ -177,3 +177,7 @@ a.fab:hover {
     color: #016d9f;
     text-decoration: none;
 }
+
+label {
+    font-family: Quicksand;
+}

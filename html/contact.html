@@ -48,6 +48,34 @@
       <div>
         <h3 class="page-header p-3">contact me</h3>
         <div>
+          <div>
+
+          </div>
+
+          <div>
+            <?=$thankYou ?>
+            <form method="post" action="contact.php">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>Name</label>
+                  <input type="text" name="sender" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                  <label>Email address:</label>
+                  <input type="email" name="senderEmail" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Message:</label>
+                <textarea rows="5" name="message" class="form-control"></textarea>
+              </div>
+              <div class="text-center">
+                <input type="submit" name="submit">
+              </div>
+              
+            </form>
+          </div>
+          
           <div class="row">
             <div class="col-md-6">
               <p>
