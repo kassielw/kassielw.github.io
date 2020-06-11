@@ -1,5 +1,11 @@
+:root {
+    --main: #15325c;
+    --accent-color: #fb7375;
+    --text: white;
+    --accent-text: #fec9ca;
+  }
+
 h1 {
-    color: white;
     font-family: Didot; 
     font-size: 3.75em; 
     font-style: normal; 
@@ -8,6 +14,7 @@ h1 {
 }
 
 h3 { 
+    color: var(--accent-text);
     font-family: Quicksand;
     font-size: 3.75em;
     font-style: normal; 
@@ -42,72 +49,46 @@ li {
     
 }
 
-.bg-lightblue { 
-    background: #01c5ce; 
+.bg-main { 
+    background: var(--main); 
 }
 
-.bg-salmon { 
-    background: #fa999a; 
-}
-
-.bg-darkblue { 
-    background: #016d9f; 
+.bg-accent { 
+    background: var(--accent-color); 
 }
 
 .dropdown:hover .dropdown-menu {
     display: block !important;
  }
 
-.nav-item{
+ .nav-item{
     text-align: right;
+    font-size: 1.1em;
 }
 
-.navbar-custom {
-    background-color: #016d9f;
+.navbar-brand {
+    font-size: 2.25em;
+    font-family: Didot;
 }
+
 /* change the brand and text color */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: white;
-    font-size: 5vh;
-    padding: 0;
+.navbar-dark .navbar-text {
+    color: var(--accent-text);
+    padding: none;
 }
 /* change the link color */
-.navbar-custom .navbar-nav .nav-link {
-    color: white;
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--accent-text);
 }
 /* change the color of active or hovered links */
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-    color: #fa999a;
-}
-
-.navbar-custom .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(256, 256, 256, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-  
-.navbar-custom .navbar-toggler {
-    border-color: rgba(256, 256, 256, 0.5);
-} 
-
-.navbar-custom .dropdown-menu {
-    background-color: #016d9f;
-}
-
-.navbar-custom .dropdown-item {
-    color: #ffffff;
-}
-
-.navbar-custom .dropdown-item:hover,
-.navbar-custom .dropdown-item:focus {
-    color: white;
-    background-color: #fa999a;
+.navbar-dark .nav-item.active .nav-link,
+.navbar-dark .nav-item:hover .nav-link {
+    color: var(--accent-color);
 }
 
 body {
-    padding-top: 16vh;
-    background-color: #01c5ce;
-    color: white;
+    background-color: var(--main);
+    color: var(--text);
 }
 
 .page-header {
@@ -119,18 +100,18 @@ body {
 }
  
 .btn-primary {
-    background: #fa999a;
-    color: #ffffff;
+    background: var(--accent-color);
+    color: var(--text);
+    border: none;
 }
  
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: white;
-    color: #fa999a;
+    background: var(--text);
+    color: var(--accent-color);
 }
  
 .btn-primary:active, .btn-primary.active {
-    background: #016d9f;
-    color: #ffffff;
+    color: var(--accent-color);
     box-shadow: none;
 }
 
@@ -145,12 +126,12 @@ body {
 }
 
 .link {
-    color: white;
+    color: var(--text);
     text-decoration: underline;
 }
 
 .link:hover {
-    color: #fa999a;
+    color: var(--accent-color);
 }
 
 .card {
@@ -169,12 +150,12 @@ body {
 a.fas,
 a.fab {
     padding-right: 0.5em;
-    color: #fa999a;
+    color: var(--accent-color);
 }
 
 a.fas:hover,
 a.fab:hover {
-    color: #016d9f;
+    color: var(--accent-text);
     text-decoration: none;
 }
 
@@ -184,4 +165,16 @@ label {
 
 .caption {
     padding: 0 0 0 0;
+}
+
+a.social {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.5em;
+    color: white;
+}
+
+a.social:hover {
+    color: var(--accent-color);
+    text-decoration: none;
 }
