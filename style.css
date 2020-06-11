@@ -46,7 +46,7 @@ li {
     .h-md-100 { 
         height: 100vh; 
     }
-    
+
 }
 
 .bg-main { 
@@ -59,9 +59,9 @@ li {
 
 .dropdown:hover .dropdown-menu {
     display: block !important;
- }
+}
 
- .nav-item{
+.nav-item{
     text-align: right;
     font-size: 1.1em;
 }
@@ -171,10 +171,10 @@ a.social {
     padding-left: 0.25em;
     padding-right: 0.25em;
     padding-bottom: 0.5em;
-    color: white;
+    color: var(--accent-color);
 }
 
 a.social:hover {
-    color: var(--accent-color);
+    color: var(--accent-text);
     text-decoration: none;
 }
